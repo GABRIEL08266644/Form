@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="./img/financial_data.png" alt="">
+        </div>
+        <div class="menu-btn" onclick="menuToogle()">
+            <p>
+                criar conta
+            </p>
+        </div>
+        <div class="rightside">
+            <div class="conten">
+                <h1>
+                    Crie sua conta
+                </h1>
+                <form method="POST" action="cadastro.php" class="validator">
+                    <label for="">
+                        Seu nome: <br>
+                        <input type="text" name="name" data-rules="required|min=2">
+                    </label>
+                    <label for="">
+                        Seu e-mail: <br>
+                        <input type="e-mail" name="e-mail" Data-rules="required|email">
+                    </label>
+                    <label for="">
+                        Sua senha: <br>
+                        <input type="password" name="password" Data-rules="required|min=6">
+                    </label>
+                    <label for="">
+                        Confirme sua senha:<br>
+                        <input type="password" name="password" data-rules="required|min=6">
+                    </label>
+                    <label class="btn-create-cont" for="">
+                        <input type="submit" value="cadastrar">
+                    </label>
+                </form>
+                <div class="fazer-login">
+                    Já tem uma conta? <a href="">Faça o Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/style.js"></script>
+</body>
+</html>

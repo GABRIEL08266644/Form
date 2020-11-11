@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+.screen {
+    display: flex;
+    height: 100vh;
+}
+
+ .leftside {
+    flex: 1;
+}
+
+.leftside img{
+    width: 80%;
+    height: auto;
+}
+
+.menu-btn {
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-btn p {
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.menu-btn p:hover {
+    color: white;
+}
+
+.rightside {
+    overflow: hidden;
+    background-color:#DDD; 
+    padding: 80px;
+    width: 50px;
+    transition: all 0.5s;
+}
+
+.conten {
+    padding-left: 200px;
+}
+
+.rightside h1 {
+    white-space: nowrap;
+}
+
+.menu-open {
+    width: 500px; 
+}
+
+.rightside label {
+    display: block;
+    margin-top: 20px;
+    white-space: nowrap;
+    width: 300px;
+}
+
+.rightside input {
+    height: 25px;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 14px;
+}
+
+.error {
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+form .btn-create-cont {
+    padding-top: 10px;
+}
+
+form .btn-create-cont a:hover {
+    background-color: rgb(0, 16, 34);
+}
+
+.fazer-login {
+    white-space: nowrap;
+    padding-top: 10px;
+}
